@@ -4,14 +4,31 @@ const orderHistory = [
     orderDate: 'August 4, 2020',
     orderTotal: 34,
     deliveryDate: 'Aug 8, 2020',
-    shipToName: 'JS Masher',
+    shipToName: {
+      name: 'JS Masher',
+      accountID: '123-4124',
+      shipAddress: {
+        streetAddress: '123 here ln',
+        city: 'someTown',
+        state: 'CA',
+        zipCode: '92012-0979',
+      },
+      paymentInfo: {
+        streetAddress: '123 here ln',
+        city: 'someTown',
+        state: 'CA',
+        zipCode: '92012-0979',
+        card: 'xxxx-xxxx-xxxx-2040',
+        cvv: 222,
+      },
+    },
     item: [
       {
         title: 'JavaScript for impatient programmers',
         author: 'Rauschmayer, Dr. Axel',
         returnWindow: 'Sep 7, 2020',
         price: 31.55,
-        itemNumber: '',
+        itemNumber: '2321',
       },
     ],
   },
@@ -21,14 +38,31 @@ const orderHistory = [
     orderDate: 'July 19, 2020',
     orderTotal: 44.53,
     deliveryDate: 'Jul 20, 2020',
-    shipToName: 'JS Masher',
+    shipToName: {
+      name: 'JS Masher',
+      accountID: '123-4124',
+      shipAddress: {
+        streetAddress: '123 here ln',
+        city: 'someTown',
+        state: 'CA',
+        zipCode: '92012-0979',
+      },
+      paymentInfo: {
+        streetAddress: '123 here ln',
+        city: 'someTown',
+        state: 'CA',
+        zipCode: '92012-0979',
+        card: 'xxxx-xxxx-xxxx-2040',
+        cvv: 222,
+      },
+    },
     item: [
       {
         title: 'The Timeless Way of Building',
         author: 'Alexander, Christopher',
         returnWindow: 'Aug 19, 2020',
         price: 41.33,
-        itemNumber: '',
+        itemNumber: '51251',
       },
     ],
   },
@@ -38,7 +72,24 @@ const orderHistory = [
     orderDate: 'July 4, 2020',
     orderTotal: 17.22,
     deliveryDate: 'Jul 7, 2020',
-    shipToName: 'JS Masher',
+    shipToName: {
+      name: 'JS Masher',
+      accountID: '123-4124',
+      shipAddress: {
+        streetAddress: '123 here ln',
+        city: 'someTown',
+        state: 'CA',
+        zipCode: '92012-0979',
+      },
+      paymentInfo: {
+        streetAddress: '123 here ln',
+        city: 'someTown',
+        state: 'CA',
+        zipCode: '92012-0979',
+        card: 'xxxx-xxxx-xxxx-2040',
+        cvv: 222,
+      },
+    },
     item: [
       {
         title:
@@ -46,7 +97,7 @@ const orderHistory = [
         author: '',
         returnWindow: 'Aug 5, 2020',
         price: 15.98,
-        itemNumber: '',
+        itemNumber: '1678',
       },
     ],
   },
@@ -56,7 +107,24 @@ const orderHistory = [
     orderDate: 'July 3, 2020',
     orderTotal: 138.93,
     deliveryDate: 'Jul 5, 2020',
-    shipToName: 'JS Masher',
+    shipToName: {
+      name: 'JS Masher',
+      accountID: '123-4124',
+      shipAddress: {
+        streetAddress: '123 here ln',
+        city: 'someTown',
+        state: 'CA',
+        zipCode: '92012-0979',
+      },
+      paymentInfo: {
+        streetAddress: '123 here ln',
+        city: 'someTown',
+        state: 'CA',
+        zipCode: '92012-0979',
+        card: 'xxxx-xxxx-xxxx-2040',
+        cvv: 222,
+      },
+    },
     item: [
       {
         title:
@@ -64,14 +132,14 @@ const orderHistory = [
         author: '',
         returnWindow: 'Aug 4, 2020',
         price: 94.95,
-        itemNumber: '',
+        itemNumber: '437',
       },
       {
         title: 'The Art of Sql',
         author: 'Faroult, Stephane',
         returnWindow: 'Aug 4, 2020',
         price: 33.99,
-        itemNumber: '',
+        itemNumber: '94657',
       },
     ],
   },
