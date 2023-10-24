@@ -21,3 +21,4 @@ const bookshelf = [
 console.log('The author of the second book is:\n', bookshelf[1].author);
 console.log('The ISBN of the first book is:\n', bookshelf[0].isbn);
 console.log('The title of the third book is:\n', bookshelf[2].title);
+console.log();
