@@ -1,9 +1,10 @@
 /* exported pick */
 function pick(source, keys) {
   const object = {};
-  for (const key in source) {
-    if (source[key] !== undefined) {
-      object[key] = source[key];
+  for (const prop of keys) {
+    const key = source[prop];
+    if (key !== undefined) {
+      object[prop] = source[prop];
     }
   }
   return object;
