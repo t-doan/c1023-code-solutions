@@ -1,11 +1,13 @@
 /* exported equal */
 function equal(first, second) {
   let boolean;
+  let firstInt;
+  let secondInt;
 
   if (first.length === second.length) {
     for (let i = 0; i < first.length; i++) {
-      const firstInt = first[i];
-      const secondInt = second[i];
+      firstInt = first[i];
+      secondInt = second[i];
       if (firstInt === secondInt) {
         boolean = true;
       } else {
