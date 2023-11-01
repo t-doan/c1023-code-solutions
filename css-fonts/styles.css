@@ -1,0 +1,12 @@
+h1,
+h2 {
+  font-family: 'Merriweather', serif;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+p {
+  line-height: 1.75;
+}
