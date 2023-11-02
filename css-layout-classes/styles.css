@@ -1,24 +1,30 @@
-.container {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+* {
   box-sizing: border-box;
 }
 
 h1 {
-  height: 30px;
-  width: 350px;
+  height: 50px;
+  width: 400px;
 }
 
 .row {
   display: flex;
 }
 
-.col-1,
-.col-2,
-.col-3,
-.col-full {
+.col-1 {
+  flex-basis: 100%;
+}
+
+.col-2 {
+  flex-basis: calc(200% / 3);
+}
+
+.col-3 {
   flex-basis: calc(100% / 3);
+}
+
+.col-full {
+  flex-basis: 25%;
 }
 
 img {
@@ -29,4 +35,11 @@ img {
 article {
   width: 500px;
   padding: 10px;
+}
+
+.container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: sans-serif;
 }
