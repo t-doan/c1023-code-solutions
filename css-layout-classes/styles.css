@@ -1,0 +1,32 @@
+.container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+h1 {
+  height: 30px;
+  width: 350px;
+}
+
+.row {
+  display: flex;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-full {
+  flex-basis: calc(100% / 3);
+}
+
+img {
+  width: 100%;
+  margin: 0 -15px;
+}
+
+article {
+  width: 500px;
+  padding: 10px;
+}
