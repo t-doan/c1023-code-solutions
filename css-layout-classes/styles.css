@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  height: 50px;
+  width: 400px;
+}
+
+.row {
+  display: flex;
+}
+
+.col-article {
+  flex-basis: (200/3);
+}
+
+.col-1 {
+  flex-basis: 100%;
+}
+
+.col-third {
+  flex-basis: calc(100% / 3);
+}
+
+.col-fourth {
+  flex-basis: 25%;
+}
+
+img {
+  width: 100%;
+  margin: 0 -15px;
+}
+
+article {
+  width: 500px;
+  padding: 10px;
+}
+
+.container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: sans-serif;
+}
