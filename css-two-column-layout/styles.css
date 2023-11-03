@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flexbox;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 800px;
+}
