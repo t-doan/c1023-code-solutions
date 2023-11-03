@@ -3,9 +3,34 @@
 }
 
 .container {
-  display: flexbox;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  max-width: 800px;
+  max-width: 1024px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  border-color: red;
+
+  /* border-style: dashed; */
+}
+
+.column-fourth {
+  display: flex;
+  border-color: blue;
+
+  /* border-style: dashed; */
+  width: 400px;
+}
+
+.column-half {
+  border-color: yellow;
+
+  /* border-style: solid; */
+}
+
+.header {
+  text-align: center;
 }
