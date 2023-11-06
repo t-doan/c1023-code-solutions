@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  margin: 10px 35px;
+  max-width: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+#blue-logo {
+  padding-right: 300px;
+  position: relative;
+  top: 25px;
+}
+
+.column-half {
+  display: flex;
+  padding: 30px 80px;
+  border-bottom: 1px solid #e7e9ec;
+}
+
+.column-fifth {
+  padding: 0 20px;
+  font-family: Avenir, sans-serif;
+  font-size: 26px;
+  color: #a3a3a3;
+  width: 190px;
+  margin-right: 70px;
+  text-align: center;
+}
+
+button {
+  margin: 15px -100px;
+  font-family: Avenir, sans-serif;
+  font-size: 26px;
+  height: 80px;
+  width: 200px;
+  background-color: #294464;
+  color: white;
+  border-radius: 7%;
+}
