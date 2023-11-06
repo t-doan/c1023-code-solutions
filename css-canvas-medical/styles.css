@@ -5,7 +5,7 @@
 .container {
   display: flex;
   margin: 10px 35px;
-  max-width: 100%;
+  max-width: 1080px;
 }
 
 .row {
@@ -34,7 +34,7 @@
   text-align: center;
 }
 
-button {
+#contact {
   margin: 15px -100px;
   font-family: Avenir, sans-serif;
   font-size: 26px;
@@ -44,3 +44,9 @@ button {
   color: white;
   border-radius: 7%;
 }
+
+/* #hero{
+  position:absolute;
+  top: 225px; left: 110px;
+  width: 1980px;
+} */
