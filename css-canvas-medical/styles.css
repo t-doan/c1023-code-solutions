@@ -57,11 +57,13 @@ h4 {
   flex-wrap: wrap;
   margin-left: 165px;
   margin-top: 100px;
+  z-index: 2;
 }
 
 h1 {
   font-size: 55px;
   width: 675px;
+  color: white;
 }
 
 p {
@@ -69,6 +71,7 @@ p {
   width: 580px;
   margin-top: -20px;
   margin-bottom: 40px;
+  color: white;
 }
 
 #start {
@@ -82,8 +85,25 @@ p {
   border-color: transparent;
 }
 
-/* #hero{
-  position:absolute;
-  top: 225px; left: 110px;
-  width: 1980px;
-} */
+#hero {
+  position: absolute;
+  width: 1580px;
+  right: 160px;
+  z-index: -1;
+  top: 175px;
+  height: 760px;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.15);
+  top: 175px;
+  height: 760px;
+  position: absolute;
+  width: 1580px;
+  right: 160px;
+}
+
+#second-body {
+  padding-top: 400px;
+  margin: auto;
+}
