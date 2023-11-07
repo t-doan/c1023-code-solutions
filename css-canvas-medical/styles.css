@@ -95,7 +95,7 @@ p {
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.2);
   top: 175px;
   height: 760px;
   position: absolute;
