@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phrase {
+  margin: 325px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+}
+
+.black {
+  border-bottom: 5px solid black;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+  border-bottom: 5px solid red;
+}
