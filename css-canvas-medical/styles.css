@@ -103,7 +103,14 @@ p {
   right: 160px;
 }
 
-#second-body {
-  padding-top: 400px;
-  margin: auto;
+.second-body {
+  padding-top: 275px;
+  color: #6e6e6e;
+}
+
+.body-heading {
+  font-size: 25px;
+  text-align: center;
+  width: 580px;
+  margin: 0 400px;
 }
