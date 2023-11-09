@@ -163,3 +163,17 @@ h5 {
 .left-margin {
   margin-left: 525px;
 }
+
+.black-font {
+  color: black;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.footer-terms {
+  width: 285px;
+  flex-basis: 0;
+  margin-left: 100px;
+}
