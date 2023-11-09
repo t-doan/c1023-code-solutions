@@ -6,8 +6,8 @@ function callBack(event) {
   console.log('target tag name:', event.target.tagName);
 
   if (event.target.tagName === 'BUTTON') {
-    const closestAncestor = event.target.closest('.task-list-item');
-    console.log('closest:', closestAncestor);
-    closestAncestor.remove();
+    const $closestAncestor = event.target.closest('.task-list-item');
+    console.log('closest:', $closestAncestor);
+    $closestAncestor.remove();
   }
 }
