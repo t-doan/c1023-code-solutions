@@ -75,7 +75,7 @@ function renderPokemon(pokemon) {
   $columnThird.appendChild($pokemonCard);
 
   const $img = document.createElement('img');
-  $img.setAttribute('src', './' + pokemon.imageUrl);
+  $img.setAttribute('src', pokemon.imageUrl);
   $pokemonCard.appendChild($img);
 
   const $pokemonText = document.createElement('div');
