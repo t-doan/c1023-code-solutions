@@ -19,7 +19,7 @@ const jsonBooks = JSON.stringify(books);
 console.log('JSON array to string:', jsonBooks);
 console.log('typeof jsonBooks:', typeof jsonBooks);
 
-const students = '{"name":"Tom","id":"619202"}';
+const students = '{"name":"Tom","id":619202}';
 
 console.log('JSON String of student:', students);
 console.log('typeof:', typeof students);
