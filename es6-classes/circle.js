@@ -2,8 +2,8 @@
 /* exported Circle */
 
 class Circle extends Shape {
-  constructor(radius) {
-    super(radius);
+  constructor(area, perimeter, radius) {
+    super(area, perimeter);
     this.radius = radius;
   }
 
@@ -12,5 +12,5 @@ class Circle extends Shape {
   }
 }
 
-const myCircle = new Circle(15);
+const myCircle = new Circle(25, 20, 15);
 console.log(myCircle.describe());
