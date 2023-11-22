@@ -2,15 +2,15 @@
 /* exported Square */
 
 class Square extends Shape {
-  constructor(area, perimeter, width) {
-    super(area, perimeter);
+  constructor(width) {
+    super(width * width, width * 4);
     this.width = width;
   }
 
   describe() {
-    return `${myShape.describe()} width: ${this.width}`;
+    return `${super.describe()} width: ${this.width}`;
   }
 }
 
-const mySquare = new Square(25, 20, 5);
+const mySquare = new Square(3, 2, 5);
 console.log(mySquare.describe());

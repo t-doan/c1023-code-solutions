@@ -2,15 +2,15 @@
 /* exported Circle */
 
 class Circle extends Shape {
-  constructor(area, perimeter, radius) {
-    super(area, perimeter);
+  constructor(radius) {
+    super(Math.PI * (radius * radius), 2 * Math.PI * radius);
     this.radius = radius;
   }
 
   describe() {
-    return `${myShape.describe()} radius: ${this.radius}`;
+    return `${super.describe()} radius: ${this.radius}`;
   }
 }
 
-const myCircle = new Circle(25, 20, 15);
+const myCircle = new Circle(3, 5, 5);
 console.log(myCircle.describe());
