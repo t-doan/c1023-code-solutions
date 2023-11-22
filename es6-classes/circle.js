@@ -12,5 +12,5 @@ class Circle extends Shape {
   }
 }
 
-const myCircle = new Circle(3, 5, 5);
+const myCircle = new Circle(3);
 console.log(myCircle.describe());

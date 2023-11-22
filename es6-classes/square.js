@@ -12,5 +12,5 @@ class Square extends Shape {
   }
 }
 
-const mySquare = new Square(3, 2, 5);
+const mySquare = new Square(3);
 console.log(mySquare.describe());
