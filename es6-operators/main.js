@@ -19,10 +19,10 @@ console.log('v2:', v2 && 'v2 is truthy');
  * Log both `config1` and `config2`.
  * Expected: `config1 = { value: 'Something' }`, `config2 = 'default-value'`.
  */
-const config1 = 'default-value';
-console.log('config1:', v1 || config1);
-const config2 = 'default-value';
-console.log('config2:', v2 || config2);
+const config1 = v1 || 'default-value';
+console.log('config1:', config1);
+const config2 = v2 || 'default-value';
+console.log('config2:', config2);
 
 /* TODO:
  * Demonstrate how to assign a "default value" to a variable only if the variable is `undefined`.
