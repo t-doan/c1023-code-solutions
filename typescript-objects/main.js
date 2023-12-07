@@ -1,0 +1,18 @@
+var student = { firstName: 'Tai', lastName: 'Doan', age: 26 };
+var fullName = student.firstName + ' ' + student.lastName;
+console.log('fullName:', fullName);
+student.livesinIrvine = false;
+console.log('livesinIrvine:', student.livesinIrvine);
+student.previousOccupation = 'Sales';
+console.log('previousOccupation:', student.previousOccupation);
+console.log('student:', student);
+var vehicle = { make: 'Hyundai', model: 'Elantra', year: 2020 };
+vehicle['color'] = 'black';
+console.log('color:', vehicle.color);
+vehicle['isConvertible'] = false;
+console.log('isConvertible:', vehicle.isConvertible);
+console.log('vehicle:', vehicle);
+var pet = { name: 'Fido', kind: 'dog' };
+delete pet.name;
+delete pet.kind;
+console.log('pet:', pet);
