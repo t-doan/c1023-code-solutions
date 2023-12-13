@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-img {
+  height: 20rem;
+  padding: 2rem;
+}
+
+.column-fifth {
+  padding: 0.25rem;
+}
+
+.column-third {
+  padding: 0.5rem;
+}
+
+.fa-chevron-right,
+.fa-chevron-left {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.fa-circle {
+  font-size: 0.75em;
+}
