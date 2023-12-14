@@ -1,8 +1,5 @@
 export function isPalindrome(str: string): boolean {
-  for (let i = 0; i <= str.length; i++) {
-    if (str[i] === str[str.length - i]) {
-      return true;
-    }
-  }
-  return false;
+  const formattedStr = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+  const reversedStr = formattedStr.split('').reverse().join('');
+  return formattedStr === reversedStr;
 }
