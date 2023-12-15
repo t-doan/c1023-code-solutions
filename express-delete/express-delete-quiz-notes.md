@@ -5,6 +5,7 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is the significance of an HTTP request's method?
+  the assets that indicate the specific desired action to be performed on a given resource.
 
 ## Notes
 
