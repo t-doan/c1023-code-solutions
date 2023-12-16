@@ -27,15 +27,19 @@ app.post('/api/grades', (req, res) => {
   if (!req.body.name || !req.body.course || !req.body.score) {
     res.sendStatus(404);
   } else {
-    const newGrade: Grade = {
-      id: nextId++,
-      name: req.body.name,
-      course: req.body.course,
-      score: req.body.score,
-    };
+    if (Object.keys(req.body).length === 3) {
+      const newGrade: Grade = {
+        id: nextId++,
+        name: req.body.name,
+        course: req.body.course,
+        score: req.body.score,
+      };
 
-    grades[newGrade.id] = newGrade;
-    res.status(201).json(newGrade);
+      grades[newGrade.id] = newGrade;
+      res.status(201).json(newGrade);
+    } else {
+      res.sendStatus(404);
+    }
   }
 });
 
