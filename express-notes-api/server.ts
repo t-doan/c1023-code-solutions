@@ -51,11 +51,12 @@ app.post('/api/notes', (req, res) => {
     return res.status(400).json({ error: 'content is a required field' });
   } else {
     const newNote: Note = {
-      id: data.nextId++,
+      id: data.nextId,
       content: req.body.content,
     };
     try {
       create(newNote);
+      data.nextId++;
       return res.status(201).json(newNote);
     } catch (error) {
       console.error(error);
@@ -94,12 +95,10 @@ app.put('/api/notes/:id', (req, res) => {
   const id = +req.params.id;
   const note = req.body.content;
   if (isNaN(id) || id <= 0 || !note || note.match(/^ *$/)) {
-    return res
-      .status(400)
-      .json({
-        error:
-          'Invalid! ID must be a positive integer and content must not be empty',
-      });
+    return res.status(400).json({
+      error:
+        'Invalid! ID must be a positive integer and content must not be empty',
+    });
   }
   if (data.notes[id]) {
     const editNote = data.notes[id];
