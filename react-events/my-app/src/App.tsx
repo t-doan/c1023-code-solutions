@@ -7,6 +7,10 @@ import { CustomButton } from './CustomButton';
 function App() {
   const [count, setCount] = useState(0);
 
+  function handleCustomClick(text: string) {
+    window.alert(text);
+  }
+
   return (
     <>
       <div>
@@ -29,9 +33,17 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <CustomButton text="hello" color="green" />
-      <CustomButton text="goodbye" color="blue" />
-      <CustomButton text="Run!" color="red" />
+      <CustomButton
+        text="hello"
+        color="green"
+        onCustomClick={handleCustomClick}
+      />
+      <CustomButton
+        text="goodbye"
+        color="blue"
+        onCustomClick={handleCustomClick}
+      />
+      <CustomButton text="Run!" color="red" onCustomClick={handleCustomClick} />
     </>
   );
 }

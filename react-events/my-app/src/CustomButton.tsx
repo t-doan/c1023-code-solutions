@@ -1,11 +1,12 @@
 type Prop = {
   text: string;
   color: string;
+  onCustomClick: (text: string) => void;
 };
 
-export function CustomButton({ text, color }: Prop) {
+export function CustomButton({ text, color, onCustomClick }: Prop) {
   function handleClick() {
-    window.alert(text);
+    onCustomClick(text);
   }
 
   return (
