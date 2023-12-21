@@ -26,9 +26,9 @@ function App() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
-      <CustomButton text={'I'} color={'red'} />
-      <CustomButton text={'know'} color={'green'} />
-      <CustomButton text={'React!'} color={'blue'} />
+      <CustomButton text="I" color="red" />
+      <CustomButton text="know" color="green" />
+      <CustomButton text="React!" color="blue" />
     </>
   );
 }
