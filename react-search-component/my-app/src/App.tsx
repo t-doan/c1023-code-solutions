@@ -1,4 +1,4 @@
-import './App.css'
+import './App.css';
 import { SearchableList } from './SearchableList';
 
 const quotes = [
@@ -17,9 +17,7 @@ const quotes = [
 ];
 
 function App() {
-
-  return (
-  )
+  return <SearchableList list={quotes} />;
 }
 
-export default App
+export default App;
