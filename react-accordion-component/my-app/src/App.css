@@ -1,0 +1,16 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.wrapper {
+  width: 25rem;
+  border-color: white;
+}
+
+.title {
+  background-color: gray;
+  cursor: pointer;
+}
