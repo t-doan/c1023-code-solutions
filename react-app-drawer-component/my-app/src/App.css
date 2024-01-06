@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+.menu-icon {
+  margin: 0.5rem;
+  font-size: 2rem;
+  width: 2rem;
+}
+
+.menu-drawer {
+  top: 0;
+  z-index: 1;
+  width: 275px;
+  min-height: 100vh;
+  padding-top: 1rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.45);
+  transform: translateX(-283px);
+  transition: transform 0.2s ease-in-out;
+}
+
+.menu-drawer.is-open {
+  transform: translateX(0);
+}
+
+.menu-heading {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.menu-items {
+  padding: 0;
+}
+
+.menu-item {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  list-style-type: none;
+  background-color: rgb(255, 255, 255);
+  transition: background-color 0.25s ease-in-out;
+}
+
+.menu-shade {
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.menu-shade.is-drawn {
+  opacity: 0.5;
+  pointer-events: all;
+}
+
+.menu-icon,
+.menu-item {
+  cursor: pointer;
+}
+
+.menu-heading,
+.menu-item {
+  padding-left: 1rem;
+}
+
+.menu-drawer,
+.menu-shade {
+  position: absolute;
+}
+
+.menu-item:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+h3 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
