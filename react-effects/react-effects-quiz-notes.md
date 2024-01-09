@@ -21,6 +21,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 
 - What are Effect dependencies and how do you declare them?
   dependencies are determined based on the code inside of the Effect
+  any variables, functions, props, or states
 
 - Why would you want to clean up from an Effect?
   if Effect breaks when remounting then, it is needed

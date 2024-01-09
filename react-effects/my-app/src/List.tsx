@@ -16,19 +16,15 @@ export function List() {
     async function start() {
       try {
         const json = await readItems();
-        if (isLoading) {
-          setItems(json);
-        }
+        setItems(json);
       } catch (e) {
         setError(e);
+      } finally {
+        setIsLoading(false);
       }
     }
     start();
-
-    return () => {
-      setIsLoading(false);
-    };
-  });
+  }, []);
 
   if (isLoading) {
     return <div>Loading...</div>;
