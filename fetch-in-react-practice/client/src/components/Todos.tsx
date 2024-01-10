@@ -19,73 +19,65 @@ export function Todos() {
   /* Implement useEffect to fetch all todos. Hints are at the bottom of the file. */
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('/api/todos');
-      try{
-        if (!response.ok){
+      try {
+        const response = await fetch('/api/todos');
+        if (!response.ok) {
           throw new Error(`Error ${response.status}`);
         }
         const items = await response.json();
         setTodos(items);
-      } catch (e){
+      } catch (e) {
         console.error(e);
         setError(e);
-      }
-      finally{
+      } finally {
         setIsLoading(false);
       }
-    }
+    };
     fetchData();
   }, []);
 
   /* Implement addTodo to add a new todo. Hints are at the bottom of the file. */
   async function addTodo(newTodo: UnsavedTodo) {
-    const response = await fetch('/api/todos', {
-      method: "POST",
-      headers:{
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(newTodo),
-    });
-    try{
-      if (!response.ok){
-          throw new Error(`Error ${response.status}`);
-        }
-        const item = await response.json();
-        setTodos([...todos, item]);
-    }
-    catch (e){
+    try {
+      const response = await fetch('/api/todos', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newTodo),
+      });
+      if (!response.ok) {
+        throw new Error(`Error ${response.status}`);
+      }
+      const item = await response.json();
+      setTodos([...todos, item]);
+    } catch (e) {
       console.error(e);
       setError(e);
-    }
-    finally{
+    } finally {
       setIsLoading(false);
     }
   }
 
   /* Implement toggleCompleted to toggle the completed state of a todo. Hints are at the bottom of the file. */
   async function toggleCompleted(todo: Todo) {
-    todo.isCompleted=!todo.isCompleted;
-    const response = await fetch(`/api/todos/${todo.todoId}`, {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(todo),
-    });
     try {
+      todo.isCompleted = !todo.isCompleted;
+      const response = await fetch(`/api/todos/${todo.todoId}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(todo),
+      });
       if (!response.ok) {
         throw new Error(`Error ${response.status}`);
       }
       const item = await response.json();
       const oldArray = todos;
-      const newArray = oldArray.map((todo) => {
-        if (todo.todoId === item.todoId){
-          return todo = item;
-        }
-        else{
-          return todo;
-        }
-      });
+      const newArray = oldArray.map((todo) =>
+        todo.todoId === item.todoId ? item : todo
+      );
       setTodos(newArray);
     } catch (e) {
       console.error(e);
