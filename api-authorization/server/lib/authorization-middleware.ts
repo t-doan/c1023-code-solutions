@@ -3,15 +3,14 @@ import { NextFunction, Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
 import { ClientError } from './client-error.js';
 
-const hashKey = process.env.TOKEN_SECRET;
-if (!hashKey) throw new Error('TOKEN_SECRET not found in .env');
-
 export function authMiddleware(
   req: Request,
   res: Response,
   next: NextFunction
 ): void {
   /* your code here */
+  const hashKey = process.env.TOKEN_SECRET;
+  if (!hashKey) throw new Error('TOKEN_SECRET not found in .env');
 
   const authHeader = req.headers.authorization;
   if (!authHeader || !authHeader.startsWith('Bearer ')) {
