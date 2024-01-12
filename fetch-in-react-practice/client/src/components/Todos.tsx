@@ -73,7 +73,7 @@ export function Todos() {
       if (!response.ok) {
         throw new Error(`Error ${response.status}`);
       }
-      const item = await response.json();
+      const item = (await response.json()) as Todo;
       const oldArray = todos;
       const newArray = oldArray.map((todo) =>
         todo.todoId === item.todoId ? item : todo
