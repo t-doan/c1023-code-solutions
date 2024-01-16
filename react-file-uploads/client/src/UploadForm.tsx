@@ -34,6 +34,7 @@ export function UploadForm() {
         method: 'post',
         body: formData,
       });
+      if (!response.ok) throw new Error(`fetch Error: ${response.status}`);
       const result = await response.json();
       console.log(result);
       setImageFile(result);
