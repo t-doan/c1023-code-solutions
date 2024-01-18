@@ -14,19 +14,17 @@ export function countValues<T>(stack: Stack<T>): number {
 }
 
 export function maxValue(stack: Stack<number>): number {
-  let largest: number = 0;
-  let temp: number;
-  while (stack.peek() !== undefined) {
-    if (stack.peek() === undefined) {
-      return -Infinity;
-    } else {
-      temp = stack.pop() as number;
-      if (temp >= largest) {
-        largest = temp;
-      } else {
-        return temp;
-      }
+  let largest = -Infinity;
+  let temp = stack.peek();
+  if (temp === undefined) {
+    return -Infinity;
+  }
+  while (temp !== undefined) {
+    if (temp > largest) {
+      largest = temp;
     }
+    stack.pop();
+    temp = stack.peek();
   }
   return largest;
 }
